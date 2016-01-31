@@ -49,6 +49,7 @@ gem 'momentjs-rails'
 gem 'faker'
 gem 'react-rails'
 gem 'bcrypt'
+gem 'devise'
 
 group :production do
   gem 'puma'
