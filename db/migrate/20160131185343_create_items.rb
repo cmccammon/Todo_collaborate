@@ -1,7 +1,7 @@
 class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
-      t.text :item
+      t.text :item,  null: false
       t.datetime :due_date
       t.boolean :completed
 
