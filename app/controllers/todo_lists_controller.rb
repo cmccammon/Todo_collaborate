@@ -2,14 +2,12 @@ class TodoListsController < ApplicationController
   before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
 
   # GET /todo_lists
-  # GET /todo_lists.json
   # idealy list only your lists.
   def index
     @todo_lists = TodoList.all
   end
 
   # GET /todo_lists/1
-  # GET /todo_lists/1.json
   def show
     @items = items.find(params[:id])
   end
