@@ -26,3 +26,15 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.item %></td>
+        <td><%= item.due_date %></td>
+        <td><%= item.completed %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>

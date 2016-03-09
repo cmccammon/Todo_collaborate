@@ -9,8 +9,8 @@ class TodoListsController < ApplicationController
 
   # GET /todo_lists/1
   def show
-    @todo_list = todo_list.find(params[:id])
-    @items = items.find(params[:id])
+    @todo_list = TodoList.find(params[:id])
+
   end
 
   # GET /todo_lists/new
